@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahesh Yennam | Node.js Developer</title>
+    <title>Mahesh Yennam | Node.js Backend Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.png" />
   </head>
@@ -33,7 +33,7 @@
       <div class="profile-text">
         <p class="intro">Hello I'm</p>
         <h1 class="name">Mahesh Yennam</h1>
-        <h2 class="role">Node.js Developer</h2>
+        <h2 class="role">Node.js Backend Developer</h2>
 
         <div class="actions">
           <button
@@ -45,18 +45,37 @@
         </div>
 
         <div class="social-links">
-          <img
-            src="assets/linkedin.png"
-            alt="LinkedIn"
-            class="icon"
-            onclick="window.open('https://linkedin.com/in/mahesh-yennam', '_blank')"
-          />
-          <img
-            src="assets/github.png"
-            alt="Github"
-            class="icon"
-            onclick="window.open('https://github.com/Mahesh-Yennam', '_blank')"
-          />
+          <div class="badge-wrapper">
+            <span class="hover-text">
+              <img
+              src="assets/linkedin.png"
+              alt="LinkedIn"
+              class="icon"
+              onclick="window.open('https://linkedin.com/in/mahesh-yennam', '_blank')"
+              />
+            </span>
+
+            <div
+              class="badge-base LI-profile-badge"
+              data-locale="en_US"
+              data-size="medium"
+              data-theme="dark"
+              data-type="VERTICAL"
+              data-vanity="mahesh-yennam"
+              data-version="v1"
+            >
+              <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/mahesh-yennam"></a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="assets/github.png"
+              alt="Github"
+              class="icon"
+              onclick="window.open('https://github.com/Mahesh-Yennam', '_blank')"
+            />
+          </div>
+
         </div>
       </div>
     </section>
@@ -75,7 +94,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>3+ years <br />Node.js Development</p>
+              <p>3+ years <br />Node.js Backend Development</p>
             </div>
             <div class="details-container">
               <img
@@ -90,7 +109,7 @@
 
           <div class="text-container">
             <p>
-              I am a passionate Node.js Developer with a strong foundation in
+              I am a passionate Node.js Backend Developer with a strong foundation in
               building scalable back-end systems. I love solving complex
               architectural problems and optimizing database queries to ensure
               high-performance applications.
@@ -128,7 +147,7 @@
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-title-box">
-              <h2 class="exp-role">Node.js Developer</h2>
+              <h2 class="exp-role">Node.js Backend Developer</h2>
               <h3 class="exp-company">Wharf Street Studios</h3>
               <p class="exp-location">Juinagar, Navi Mumbai</p>
             </div>
@@ -470,5 +489,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript" ></script>
   </body>
 </html>

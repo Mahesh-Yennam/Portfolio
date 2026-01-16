@@ -1,8 +1,10 @@
 :root {
-  --bg-dark: #0f172a;
+  --bg-dark: #0f2a44;
+  /* --bg-dark: #0f172a; */
   --bg-light: #f8fafc;
   --accent: #22c55e;
-  --text: #e5e7eb;
+  --text: #fff;
+  /* --text: #e5e7eb; */
 }
 
 * {
@@ -262,7 +264,8 @@
   max-width: 140px; /* controls 5–6 per row */
   padding: 12px;
   border-radius: 1rem;
-  background: #1f2933;
+  background: #555;
+  /* background: #1f2933; */
   font-weight: 500;
   color: var(--text);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -595,6 +598,40 @@ footer p {
   color: #555;
   text-decoration: underline;
 }
+
+.badge-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Badge should not take layout space */
+.badge-wrapper .LI-profile-badge {
+  position: absolute;              /* 👈 key fix */
+  top: 100%;                        /* show below text */
+  left: 0;
+  margin-top: 0px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.badge-wrapper:hover .LI-profile-badge {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hover-text {
+  font-weight: 600;
+  color: #0a66c2;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
